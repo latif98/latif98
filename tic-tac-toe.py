@@ -44,7 +44,7 @@ def printBoard(board):
     return 
 
 
-# Check for wrong input, this function should return True or False.
+# Check for wrong input, this function will return True or False.
 def validateMove(position):
     position = int(position)
     if position >= 1 and position <= 9:
@@ -54,7 +54,7 @@ def validateMove(position):
     return False
 
 
-# List out all the combinations of winning, you will neeed this
+# List out all the combinations of winning
 winCombinations = [
     [1, 2, 3],
     [4, 5, 6],
@@ -118,7 +118,7 @@ def main():
             currentTurnPlayer = 'O'
         else:
             currentTurnPlayer = 'X'
-    # Implement the feature for the user to restart the game after a tie or game over        
+    # Feature for user to restart the game after a tie or game over        
     restart = input("Do you want to restart the game(y/n)?" ).lower()
     for i in board:
         if i <= 9 :
